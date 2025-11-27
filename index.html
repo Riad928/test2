@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Demo</title>
-    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body>
@@ -37,21 +37,72 @@
             <div class="card">card 4</div>
         </section>
     </main>
+        <section class="bg-white mt-10 py-16">
+            <div class="max-w-xl mx-auto px-6">
+                <form class="bg-gray-900 text-white p-8 rounded-2xl shadow-lg space-y-6">
+          
+                    <h2 class="text-2xl font-semibold text-center mb-4">Contact Form</h2>
+        
+                    <!-- Name -->
+                    <div class="flex flex-col space-y-2">
+                        <label for="name" class="text-sm font-medium">Name <span class="text-red-500">*</span></label>
+                        <input type="text" id="name"
+                            class="px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 outline-none transition"
+                            required>
+                    </div>
+        
+                    <!-- Email -->
+                    <div class="flex flex-col space-y-2">
+                        <label for="email" class="text-sm font-medium">Email <span class="text-red-500">*</span></label>
+                        <input type="email" id="email"
+                            class="px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 outline-none transition"
+                            required>
+                    </div>
+        
+                    <!-- Buttons -->
+                    <div class="flex gap-4 justify-center pt-4">
+                        <button type="submit"
+                            class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-xl text-white font-semibold transition shadow-md">
+                            Submit
+                        </button>
+        
+                        <button type="reset"
+                            class="bg-red-600 hover:bg-red-700 px-6 py-3 rounded-xl text-white font-semibold transition shadow-md">
+                            Reset
+                        </button>
+                    </div>
+        
+                </form>
+            </div>
+        </section>
 
-    <footer class="footer">
-        <p>&copy; 2025 Responsive Demo</p>
-        <div>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">contact</a></li>
-            <li><a href="#">Nila</a></li>
+    <footer class="bg-gray-900 text-gray-300 mt-10 py-8">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class=" flex flex-col md:flex-row items-center justify-between">
+                 <div class="text-center mx-8">
+                    <p>&copy; 2025 Responsive Demo</p>
+                 </div>
+                <div class="">
 
+                    <ul class="flex flex-col md:flex-row items-center justify-between gap-6">
+                        <li><a href="#" class="hover: text-white">Home</a></li>
+                        <li><a href="#" class="hover: text-white">About</a></li>
+                        <li><a href="#" class="hover: text-white">contact</a></li>
+                        <li><a href="#" class="hover: text-white">Nila</a></li>
+                       
+                    </ul>
+                 </div>
+                 <div class="text-center mx-8">
+                    <h1 class="font-simibod text-gray-50 text-lg mb-4">Contact me</h1>
+                    <p>Phone:01743425540</p>
+                    <p>Gmail:riadsust@gmail.com</p>
 
+                 </div>
+            </div>
         </div>
+        
     </footer>
-
-    <script src="script.js"></script>
+        .
 </body>
-
 
 </html>
