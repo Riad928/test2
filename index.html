@@ -16,17 +16,17 @@
       
             <!-- Logo -->
             <a href="#" class="flex justify-between items-center gap-4">
-                <img src="/photo/images.png" alt="logo" class="h-12 w-12 rounded-lg">
+                <img src="/photo/images.png" alt="logo" class="h-12 w-12 rounded-xl">
                 <h1 class="text-2xl font-bold">RN Company</h1>
             </a>
             
             <!-- Desktop menu -->
             <nav class="hidden md:block px-2">
                <ul class="flex space-x-6">
-                   <li><a href="#" class="text-lg hover:text-blue-600">Home</a></li>
-                   <li><a href="#" class="text-lg hover:text-blue-600">About</a></li>
-                   <li><a href="#" class="text-lg hover:text-blue-600">Services</a></li>
-                   <li><a href="#" class="text-lg hover:text-blue-600">Contact</a></li>
+                   <li><a href="#" class="text-lg bg-blue-500 px-4 py-2 rounded-lg hover:underline">Home</a></li>
+                   <li><a href="#" class="text-lg px-4 py-2 hover:bg-gray-400 rounded-lg hover:underline">About</a></li>
+                   <li><a href="#" class="text-lg px-4 py-2 hover:bg-gray-400 rounded-lg hover:underline">Services</a></li>
+                   <li><a href="#" class="text-lg px-4 py-2 hover:bg-gray-400 rounded-lg hover:underline">Contact</a></li>
                 </ul>
             </nav>
 
@@ -35,30 +35,33 @@
         </div>
 
             <!-- Mobile Menu -->
-            <div id="mobileMenu"class="hidden md:hidden bg-gray-700/95 backdrop-blur-md rounded-lg shadow-lg px-4 py-6 space-y-4 mt-2 transition-all duration-300 ease-in-out">
+            <div id="mobileMenu" class="hidden bg-gray-700 backdrop-blur-md rounded-lg shadow-lg px-4 py-6 space-y-4 mt-2 md:hidden">
                 <ul class="flex flex-col gap-3">
-                    <li><a href="#"class="block text-white text-lg font-medium px-4 py-2 rounded hover:bg-blue-600 hover:text-white transition-colors">Home</a></li>
-                    <li><a href="#"class="block text-white text-lg font-medium px-4 py-2 rounded hover:bg-blue-600 hover:text-white transition-colors">About</a></li>
-                    <li><a href="#"class="block text-white text-lg font-medium px-4 py-2 rounded hover:bg-blue-600 hover:text-white transition-colors">Services</a></li>
-                    <li><a href="#"class="block text-white text-lg font-medium px-4 py-2 rounded hover:bg-blue-600 hover:text-white transition-colors">Contact</a></li>
+                    <li><a href="#" class="block text-white text-lg font-medium px-4 py-2 rounded">Home</a></li>
+                    <li><a href="#" class="block text-white text-lg font-medium px-4 py-2 rounded">About</a></li>
+                    <li><a href="#" class="block text-white text-lg font-medium px-4 py-2 rounded">Services</a></li>
+                    <li><a href="#" class="block text-white text-lg font-medium px-4 py-2 rounded">Contact</a></li>
                 </ul>
             </div>
-
     </header>
 
 <main>
 
     <!-- =============== HERO SECTION ================ -->
-    <section class="hero bg-gradient-to-r from-blue-600 to-indigo-700 py-40">
-        <div class="max-w-7xl mx-auto text-center text-white px-4 md:px-6 lg:px-8">
+    <section class="hero bg-gradient-to-r from-blue-300 via-red-400 to-yellow-500 py-40">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
 
+          <div class="text-center text-white">
             <!-- Hero Text -->
             <h2 class="text-4xl md:text-5xl font-extrabold mb-6 tracking-wide"> Welcome to Responsive Design!
             </h2>
-            <p class="text-lg md:text-xl opacity-90 mb-8"> Resize your browser or open on any 2etyuio device to see it in action. </p>
-            <button class="bg-yellow-500 hover:bg-yellow-600 text-blue-900 font-semibold px-8 py-3 rounded-2xl shadow-lg hover:shadow-xl transition duration-300">
-                Click Me 
+            <p class="text-lg md:text-xl opacity-90 mb-8"> Resize your browser or open on any 2etyuio device to see it in action.
+            </p>
+            <button
+                class="bg-white text-black font-semibold px-8 py-3 rounded-2xl shadow-lg hover:shadow-xl transition duration-300">
+                Click Me
             </button>
+          </div>
         </div>
     </section>
 
@@ -68,23 +71,25 @@
            
             <!-- About Text -->
             <div class="md:w-1/2">
-               <h1 class="text-3xl md:text-4xl font-bold text-center">About Us</h1>
+               <h1 class="text-3xl md:text-4xl font-bold mb-6">About Us</h1>
                <p class="text-gray-900 mt-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In pariatur perspiciatis deleniti temporibus rem cum quibusdam omnis molestias. Molestias suscipit distinctio voluptatem praesentium exercitationem nam sint, error voluptatum soluta amet!</p>
+               <button class="border rounded-xl text-lg mt-8 px-6 py-3 bg-violet-500 text-white hover:bg-violet-700">Details Me</button>
             </div>
 
             <!-- About photo -->
-            <div class="md:w-1/2 mt-8 md:mt-0 ">
-                <img src="/photo/images (1).jpeg" alt="photo" class="h-72 md:h-80 object-cover">
+            <div class="md:w-1/2 mt-8 md:mt-0 flex justify-center">
+                <img src="/photo/images (1).jpeg" alt="photo" class="h-72 md:h-80 rounded-lg object-cover">
             </div>
         </div>
      </section>
 
     <!-- ================ CARD SECTION =============== -->
     <section class="bg-gray-100 py-16">
-        <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
-    
+        <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+           <h1 class="text-3xl md:text-4xl font-bold text-center mb-12">Card</h1>
+          <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
             <!-- Card 1 -->
-            <div class="bg-gray-800 rounded-2xl shadow-md hover:shadow-2xl overflow-hidden transition duration-300">
+            <div class="bg-gray-800 rounded-2xl shadow-md hover:shadow-xl overflow-hidden transition duration-300">
                 <img src="/photo/images (1).jpeg" alt="photo" class="w-full h-40 object-cover">
                 <div class="p-6 text-center">
                     <h2 class="text-2xl font-bold text-white mb-2">First Card</h2>
@@ -92,12 +97,12 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, saepe.
                     </p>
                     <button
-                        class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-semibold px-6 py-2 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                        class="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-6 py-2 rounded-xl shadow-md hover:shadow-lg transition duration-300">
                         Order Now
                     </button>
                 </div>
             </div>
-    
+            
             <!-- Card 2 -->
             <div class="bg-gray-800 rounded-2xl shadow-md hover:shadow-2xl overflow-hidden transition duration-300">
                 <img src="/photo/images (2).jpeg" alt="photo" class="w-full h-40 object-cover">
@@ -112,7 +117,7 @@
                     </button>
                 </div>
             </div>
-    
+            
             <!-- Card 3 -->
             <div class="bg-gray-800 rounded-2xl shadow-md hover:shadow-2xl overflow-hidden transition duration-300">
                 <img src="/photo/images (1).jpeg" alt="photo" class="w-full h-40 object-cover">
@@ -127,7 +132,7 @@
                     </button>
                 </div>
             </div>
-    
+            
             <!-- Card 4 -->
             <div class="bg-gray-800 rounded-2xl shadow-md hover:shadow-2xl overflow-hidden transition duration-300">
                 <img src="/photo/images (2).jpeg" alt="photo" class="w-full h-40 object-cover">
@@ -142,14 +147,15 @@
                     </button>
                 </div>
             </div>
-    
+          </div>
+           
         </div>
     </section>
 
         <!-- =============== CONTACT SECTION =============== -->
         <section class="bg-white py-16">
             <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-                <form class=" max-w-xl mx-auto bg-gray-900 text-white p-8 rounded-2xl shadow-lg space-y-6">
+                <form class="max-w-xl mx-auto bg-gray-900 text-white p-8 rounded-2xl shadow-lg space-y-6">
                    <h2 class="text-2xl font-semibold text-center mb-4">Contact Form</h2>
         
                     <!-- Name -->
@@ -162,7 +168,7 @@
         
                     <!-- Email -->
                     <div class="flex flex-col space-y-2">
-                        <label for="email" class="text-sm font-medium">Email <span class="text-red-500">*</span></label>
+                        <label for="email" class="text-sm font-medium">Email<span class="text-red-500">*</span></label>
                         <input type="email" id="email"
                             class="px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 outline-none transition"
                             required>
@@ -180,7 +186,6 @@
                             Reset
                         </button>
                     </div>
-        
                 </form>
             </div>
         </section>
@@ -188,12 +193,12 @@
 
         <!-- =============== FOOTER =============== -->
         <footer class="bg-gray-900 text-gray-300 py-10 md:py-12">
-            <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 text-center">
-                <div class="grid grid-cols-1 md:grid-cols-3 items-center gap-8 md:text-left">
+            <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 items-center gap-8 text-center md:text-left">
         
                     <p class="md:text-left">&copy; 2025 Responsive Demo</p>
         
-                    <ul class="flex flex-col md:flex-row justify-center gap-4 mt-6 md:mt-0">
+                    <ul class="flex flex-col md:flex-row justify-between gap-2 mt-6 md:mt-0">
                         <li><a href="#" class="hover:text-white">Home</a></li>
                         <li><a href="#" class="hover:text-white">About</a></li>
                         <li><a href="#" class="hover:text-white">Service</a></li>
