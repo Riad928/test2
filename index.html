@@ -14,7 +14,7 @@
 <body>
 
     <!-- ================ HEADER SECTION ================ -->
-    <header class="bg-white/80 backdrop-blur-md sticky top-0 shadow-md z-50">
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 shadow-md z-50 hover:shadow-xl">
         <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 h-16 md:h-24 flex justify-between items-center gap-8">
 
             <!-- Logo -->
@@ -26,13 +26,13 @@
             <!-- Desktop menu -->
             <nav class="hidden lg:flex items-center font-medium text-gray-600">
 
-                <a href="#"
+                <a href="#hero"
                     class="px-4 py-2 hover:text-blue-600 rounded-lg hover:underline transition duration-300">Home</a>
-                <a href="#"
+                <a href="#about"
                     class="px-4 py-2 hover:text-blue-400 rounded-lg hover:underline transition duration-300">About</a>
-                <a href="#"
+                <a href="#service"
                     class="px-4 py-2 hover:text-blue-400 rounded-lg hover:underline transition duration-300">Services</a>
-                <a href="#"
+                <a href="#contact"
                     class="px-4 py-2 hover:text-blue-400 rounded-lg hover:underline transition duration-300">Contact</a>
 
             </nav>
@@ -52,17 +52,17 @@
         <!-- Mobile Menu -->
         <div id="mobileMenu"
             class="hidden bg-gray-700 backdrop-blur-md rounded-lg shadow-lg px-4 space-y-3 font-medium lg:hidden text-center py-6 transition duration-300">
-            <a href="#" class="block bg-blue-500 text-white text-md px-4 py-2 rounded-full">Home</a></li>
-            <a href="#" class="block bg-blue-500 text-white text-md px-4 py-2 rounded-full">About</a></li>
-            <a href="#" class="block bg-blue-500 text-white text-md px-4 py-2 rounded-full">Services</a></li>
-            <a href="#" class="block bg-blue-500 text-white text-md px-4 py-2 rounded-full">Contact</a></li>
+            <a href="#hero" class="block bg-blue-500 text-white text-md px-4 py-2 rounded-full">Home</a></li>
+            <a href="#about" class="block bg-blue-500 text-white text-md px-4 py-2 rounded-full">About</a></li>
+            <a href="#service" class="block bg-blue-500 text-white text-md px-4 py-2 rounded-full">Services</a></li>
+            <a href="#contact" class="block bg-blue-500 text-white text-md px-4 py-2 rounded-full">Contact</a></li>
         </div>
     </header>
 
     <main>
 
         <!-- =============== HERO SECTION ================ -->
-        <section class="bg-gradient-to-r from-blue-300 via-red-400 to-yellow-400 py-24 md:py-40">
+        <section id="hero" class="bg-gradient-to-r from-blue-300 via-red-400 to-yellow-400 py-24 md:py-40">
             <div class="max-w-4xl mx-auto px-4 md:px-6 lg:px-8">
 
                 <!-- Hero Text -->
@@ -75,19 +75,16 @@
 
                 <!-- button -->
                 <div class="flex items-center justify-center gap-4">
-                    <button
-                        class="bg-blue-600 text-white font-semibold px-8 py-3 rounded-xl shadow-lg focus:border-blue-500 focus:ring-blue-500 focus:ring-2 transition duration-300 hover:scale-105">Get
-                        Started</button>
+                    
+                       <a href="#contact" class="bg-blue-600 text-white font-medium px-8 py-3 rounded-xl shadow-lg hover:shadow-xl focus:border-blue-500 focus:ring-blue-500 focus:ring-2 transition duration-300 hover:scale-105">Get Started</a>             
 
-                    <button
-                        class="bg-white text-black font-semibold px-8 py-3 rounded-xl shadow-lg focus:border-blue-500 focus:ring-blue-500 focus:ring-2 transition duration-300 hover:scale-105">Learn
-                        More</button>
+                       <a href="#about"  class="bg-white text-black font-medium px-8 py-3 rounded-xl shadow-lg hover:shadow-xl focus:border-blue-500 focus:ring-blue-500 focus:ring-2 transition duration-300 hover:scale-105">Learn More</a>             
                 </div>
             </div>
         </section>
 
         <!-- ================= ABOUT SECTION ================== -->
-        <section class="bg-gray-50 py-16">
+        <section id="about" class="bg-gray-50 py-16">
             <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 items-center gap-16">
 
                 <!-- About Text -->
@@ -105,14 +102,14 @@
                 <!-- About photo -->
                 <div>
                     <img src="/photo/images (1).jpeg" alt="photo"
-                        class="h-72 md:h-80 w-auto shadow-lg rounded-2xl object-cover">
+                        class="h-72 md:h-80 w-auto shadow-lg rounded-2xl object-cover transition duration-300">
                 </div>
             </div>
         </section>
 
 
         <!-- ================ CARD SECTION =============== -->
-        <section class="bg-gray-100 py-16">
+        <section id="service" class="bg-gray-100 py-16">
             <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
                 <h1 class="text-4xl md:text-6xl font-semibold text-center mb-16">Card</h1>
 
@@ -197,10 +194,10 @@
         <section class="py-20 bg-gray-50">
             <div class="max-w-4xl mx-auto px-4 md:px-6 lg:px-6">
                 <div class="text-center max-w-3xl mx-auto mb-16">
-                    <h2 class="text-3xl md:text-5xl font-semibold mb-8 leading-tight">Need more answer? Out FAQ page has got your covered.</h2>
+                    <h2 class="text-3xl md:text-5xl font-bold leading-tight">Need more answer? Out FAQ page has got your covered.</h2>
                 </div>
         
-                 <div class="max-w-3xl mx-auto bg-gray-800 text-white px-16 py-12 rounded-2xl">
+                 <div class="max-w-3xl mx-auto bg-gray-800 text-white p-12 rounded-2xl">
                     <div class="flex justify-between gap-8">
                         <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h1>
                         <strong class="text-xl border rounded-full p-1"><i class="fab fa-plus"></i></strong>
@@ -213,13 +210,13 @@
                     </div>
                     <hr class="mt-4">
 
-                    <div class="flex justify-between gap-8  mt-4">
+                    <div class="flex justify-between gap-8 mt-4">
                         <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h1>
                         <strong class="text-xl border rounded-full p-1"><i class="fab fa-plus"></i></strong>
                     </div>
                     <hr class="mt-4">
 
-                    <div class="flex justify-between gap-8  mt-4">
+                    <div class="flex justify-between gap-8 mt-4">
                         <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h1>
                         <strong class="text-xl border rounded-full p-1"><i class="fab fa-plus"></i></strong>
                     </div>
@@ -232,11 +229,11 @@
         <section class="py-16 bg-gray-100">
             <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-6">
                 <div class="text-center max-w-3xl mx-auto mb-16">
-                    <h2 class="text-4xl md:text-6xl font-semibold mb-8 leading-tight">What our customer says?</h2>
-                    <p class="text-md md:text-xl text-gray-500 leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere inventore perspiciatis impedit explicabo ullam ratione quo qui quia aliquam consequuntur?</p>
+                    <h2 class="text-3xl md:text-5xl font-bold mb-8 leading-tight">What our customer says?</h2>
+                    <p class="text-md md:text-lg text-gray-500 leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere inventore perspiciatis impedit explicabo ullam ratione quo qui quia aliquam consequuntur?</p>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                
                 <div class="rounded-2xl shadow-md hover:shadow-2xl py-6 text-center bg-white/80 hover:-translate-y-2 transition duration-300">                 
                   
@@ -262,7 +259,7 @@
         </section>
 
         <!--=============== CONTACT US SECTION ===============-->
-        <section class="bg-gray-50 py-16">
+        <section id="contact" class="bg-gray-50 py-16">
             <div class="max-w-3xl mx-auto px-4 md:px-6 lg:px-6">
                     <div class="bg-white px-16 py-12 rounded-2xl">
                         <form>
