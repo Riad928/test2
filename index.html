@@ -11,74 +11,76 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
+<body class="min-h-screen flex flex-col">
 
     <!-- ================ HEADER SECTION ================ -->
-    <header class="bg-white/80 backdrop-blur-md sticky top-0 shadow-md z-50 hover:shadow-xl">
+    <header role="banner" class="relative bg-white/80 backdrop-blur-md sticky top-0 shadow-md z-50 hover:shadow-xl transition duration-300">
         <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 h-16 md:h-24 flex justify-between items-center gap-8">
 
             <!-- Logo -->
-            <a href="#" class="flex items-center gap-3">
-                <img src="/photo/images.png" alt="logo" class="h-10 w-10 rounded-full object-cover">
-                <h1 class="text-xl font-semibold text-blue-800 tracking-wide">MY Website</h1>
+            <a href="#home" class="flex items-center gap-2">
+                <img src="/photo/images.png" alt="My Website logo" class="h-12 w-12 rounded-full object-cover">
+                <span class="text-xl font-bold text-blue-800">MY Website</span>
             </a>
 
             <!-- Desktop menu -->
-            <nav class="hidden lg:flex items-center font-medium text-gray-600">
+            <nav role="navigation" aria-label="Main navigation" class="hidden lg:flex space-x-8">
 
                 <a href="#hero"
-                    class="px-4 py-2 hover:text-blue-600 rounded-lg hover:underline transition duration-300">Home</a>
+                    class="text-lg font-semibold hover:text-blue-600 hover:underline transition duration-300">Home</a>
                 <a href="#about"
-                    class="px-4 py-2 hover:text-blue-400 rounded-lg hover:underline transition duration-300">About</a>
+                    class="text-lg font-semibold hover:text-blue-600 hover:underline transition duration-300">About</a>
                 <a href="#service"
-                    class="px-4 py-2 hover:text-blue-400 rounded-lg hover:underline transition duration-300">Services</a>
+                    class="text-lg font-semibold hover:text-blue-600 hover:underline transition duration-300">Services</a>
                 <a href="#contact"
-                    class="px-4 py-2 hover:text-blue-400 rounded-lg hover:underline transition duration-300">Contact</a>
+                    class="text-lg font-semibold hover:text-blue-600 hover:underline transition duration-300">Contact</a>
 
             </nav>
 
             <!-- search btn -->
-            <div class="hidden lg:flex items-center gap-4">
-                <input type="search" placeholder="Search..."
-                    class="border px-4 py-2 border-gray-300 rounded-full text-md shadow-lg focus:outline-none focus:border-blue-500 focus:ring-blue-500 focus:ring-2 transition duration-300">
-                <button
+            <form class="hidden lg:flex items-center gap-4" role="search">
+                <input type="search" placeholder="Search..." aria-label="Search"
+                    class="border px-4 py-2 border-gray-300 rounded-full text-md focus:outline-none focus:border-blue-500 focus:ring-blue-500 focus:ring-2 transition duration-300">
+                <button type="submit"
                     class="bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700 transition duration-300 shadow-sm hover:shadow-md">Search</button>
-            </div>
+            </form>
 
             <!-- Mobile menu btn -->
-            <button id="mobileBtn" class="lg:hidden px-4 py-2 rounded-lg">☰</button>
+            <button id="mobileTogglebtn" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileMenu" class="lg:hidden px-4 py-2 text-xl rounded-lg focus:outline-none focus:ring-blue-500 focus:ring-2"><i id="iconMenu" class="fa-solid fa-bars"></i></button>
         </div>
 
         <!-- Mobile Menu -->
-        <div id="mobileMenu"
-            class="hidden bg-gray-700 backdrop-blur-md rounded-lg shadow-lg px-4 space-y-3 font-medium lg:hidden text-center py-6 transition duration-300">
-            <a href="#hero" class="block bg-blue-500 text-white text-md px-4 py-2 rounded-full">Home</a></li>
-            <a href="#about" class="block bg-blue-500 text-white text-md px-4 py-2 rounded-full">About</a></li>
-            <a href="#service" class="block bg-blue-500 text-white text-md px-4 py-2 rounded-full">Services</a></li>
-            <a href="#contact" class="block bg-blue-500 text-white text-md px-4 py-2 rounded-full">Contact</a></li>
+        <div id="mobileMenu" aria-hidden="true"
+             class="fixed inset-x-0 top-16 bg-white shadow-lg transform -translate-y-full opacity-0 transition-all duration-300 lg:hidden">
+            <a href="#hero" class="block bg-blue-500 text-white text-md px-4 py-2 rounded-full">Home</a>
+            <a href="#about" class="block bg-blue-500 text-white text-md px-4 py-2 rounded-full">About</a>
+            <a href="#service" class="block bg-blue-500 text-white text-md px-4 py-2 rounded-full">Services</a>
+            <a href="#contact" class="block bg-blue-500 text-white text-md px-4 py-2 rounded-full">Contact</a>
         </div>
     </header>
-
     <main>
 
         <!-- =============== HERO SECTION ================ -->
-        <section id="hero" class="bg-gradient-to-r from-blue-300 via-red-400 to-yellow-400 py-24 md:py-40">
-            <div class="max-w-4xl mx-auto px-4 md:px-6 lg:px-8">
+        <section id="hero" class="bg-gradient-to-r from-blue-600 to-indigo-600 py-24 md:py-28 lg:py-32">
+            <div class="max-w-5xl mx-auto px-4 md:px-6 lg:px-8">
 
                 <!-- Hero Text -->
-                <div class="text-center text-white">
-                    <h2 class="text-4xl md:text-6xl font-extrabold mb-6 tracking-wide mb-8"> Welcome to Responsive
-                        Design!</h2>
-                    <p class="text-lg md:text-xl opacity-90 mb-12 leading-relaxed"> Resize your browser or open on any
-                        2etyuio device to see it in action.</p>
-                </div>
+                <header class="text-center text-white space-y-6">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-wide"> Build Modern & Responsive Websites Faster</h1>
+                    <p class="text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">Create clean, scalable, and high-performance web interfaces using modern design systems.
+                    Perfect for developers, startups, and agencies.</p>
+                    </header>
 
                 <!-- button -->
-                <div class="flex items-center justify-center gap-4">
-                    
-                       <a href="#contact" class="bg-blue-600 text-white font-medium px-8 py-3 rounded-xl shadow-lg hover:shadow-xl focus:border-blue-500 focus:ring-blue-500 focus:ring-2 transition duration-300 hover:scale-105">Get Started</a>             
-
-                       <a href="#about"  class="bg-white text-black font-medium px-8 py-3 rounded-xl shadow-lg hover:shadow-xl focus:border-blue-500 focus:ring-blue-500 focus:ring-2 transition duration-300 hover:scale-105">Learn More</a>             
+                <div class="flex flex-col md:flex-row items-center justify-center gap-6 mt-10">
+                       
+                        <!-- Primary btn -->
+                       <a href="#contact" 
+                       class="bg-white text-blue-600 font-medium px-8 py-3 rounded-xl shadow-lg hover:shadow-xl focus:border-blue-500 focus:ring-blue-500 focus:ring-2 transition duration-300 hover:scale-105">Get Started</a>             
+                      
+                       <!-- secondary btn -->
+                       <a href="#about"
+                        class="bg-white text-black font-medium px-8 py-3 rounded-xl shadow-lg hover:shadow-xl focus:border-blue-500 focus:ring-blue-500 focus:ring-2 transition duration-300 hover:scale-105">Learn More</a>             
                 </div>
             </div>
         </section>
@@ -106,7 +108,6 @@
                 </div>
             </div>
         </section>
-
 
         <!-- ================ CARD SECTION =============== -->
         <section id="service" class="bg-gray-100 py-16">
