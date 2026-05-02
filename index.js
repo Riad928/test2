@@ -64,3 +64,28 @@ class Navbar {
 }
 
 new Navbar();
+
+
+document.querySelectorAll("section[aria-labelledby='faq-heading'] button").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    
+    const allBtns = document.querySelectorAll("section[aria-labelledby='faq-heading'] button");
+    const allContents = document.querySelectorAll("section[aria-labelledby='faq-heading'] p");
+
+    const targetId = btn.getAttribute("aria-controls");
+    const content = document.getElementById(targetId);
+
+    const isOpen = btn.getAttribute("aria-expanded") === "true";
+
+    // close all
+    allBtns.forEach(b => b.setAttribute("aria-expanded", "false"));
+    allContents.forEach(c => c.classList.add("hidden"));
+
+    // toggle current
+    if (!isOpen) {
+      btn.setAttribute("aria-expanded", "true");
+      content.classList.remove("hidden");
+      btn.querySelector("span:last-child").textContent = "−";
+    }
+  });
+});
